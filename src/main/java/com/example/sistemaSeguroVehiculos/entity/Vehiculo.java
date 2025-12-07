@@ -39,6 +39,7 @@ public class Vehiculo {
     @JsonIgnore
     private Conductor conductor;
 
+
     @OneToMany(mappedBy = "vehiculo", cascade = CascadeType.ALL)
     private List<Seguro> seguros;
 }
