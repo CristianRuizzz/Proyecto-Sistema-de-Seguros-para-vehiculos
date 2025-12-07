@@ -30,6 +30,7 @@ public class ConductorController {
         return ResponseEntity.status(HttpStatus.CREATED).body(newConductor);
     }
 
+
     @PutMapping("/update/{idConductor}")
     public ResponseEntity<?> updateConductor(@PathVariable Long idConductor, @RequestBody Conductor conductor) {
         try {
